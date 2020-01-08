@@ -1,0 +1,299 @@
+$color-primary: #A22399;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #dddddd;
+    font-family: "Segoe UI", serif;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+}
+
+a.logo-text {
+    color: #ffffff;
+    font-family: "Arno Pro", serif;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        .brand {
+            background: $color-primary;
+
+            &__content {
+                max-width: 80%;
+                margin: 0 auto;
+                text-align: center;
+                padding: 1rem;
+            }
+        }
+
+        &__area {
+            background-image: url(../img/minnacitygate.jpg);
+            background-position: 0 53%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+            position: relative;
+
+            &-content {
+                color: #fff;
+                height: 100%;
+                position: absolute;
+                text-align: center;
+                top: 30%;
+                width: 100%;
+            }
+
+            .overlay {
+                position: absolute;
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.7);
+            }
+        }
+
+        h2 {
+            font-family: "Segoe UI", sans-serif;
+            font-size: 2rem;
+
+            span {
+                display: block;
+                font-family: "Arno Pro", serif;
+            }
+        }
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+.site {
+    &__container {
+        padding: 2rem;
+
+        & .main {
+            margin: auto;
+        }
+    }
+
+}
+
+.interests {
+    display: grid;
+    grid-gap: 2rem;
+    justify-items: center;
+    margin-top: 1rem;
+
+    &-headline {
+        color: $color-primary;
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &-item {
+        margin-top: 2rem;
+        text-align: center;
+
+        a {
+            color: #777777;
+
+            &:hover,
+            &:visited {
+                color: $color-primary;
+            }
+        }
+
+        &>img {
+            width: 50%;
+        }
+    }
+}
+
+footer {
+    padding: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+
+    a {
+        color: $color-primary;
+    }
+
+    & .legals {
+        & ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+
+            & li:not(last-of-type) {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .site {
+        width: 100%;
+
+        &__container {
+            padding: 2rem;
+
+            & .main {
+                margin: auto;
+                max-width: 80%;
+            }
+        }
+    }
+
+    .hero {
+        & .brand {
+            background: $color-primary;
+            padding: 1rem;
+
+            &__content {
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+                max-width: 80%;
+
+                &-item {
+                    font-family: "Arno Pro", serif;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        &__area {
+            background-image: url(../img/minnacitygate.jpg);
+            background-position: 0 53%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+
+            .overlay {
+                position: absolute;
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, .7);
+            }
+
+            &-content {
+                color: #fff;
+                height: 100%;
+                position: absolute;
+                text-align: center;
+                top: 30%;
+                width: 100%;
+
+                h2 {
+                    font-family: "Segoe UI", sans-serif;
+                    font-size: 3.5rem;
+
+                    span {
+                        display: block;
+                        font-family: "Arno Pro", serif;
+                    }
+                }
+
+            }
+        }
+    }
+
+    nav {
+        width: 30%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            margin: 0;
+            font-size: 1.2rem;
+        }
+    }
+
+    .interests {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin-top: 5rem;
+
+        &-headline {
+            color: $color-primary;
+            font-size: 3rem;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        &-item {
+            margin-top: 2rem;
+            text-align: center;
+
+            a {
+                color: #777;
+
+                &:hover {
+                    color: $color-primary
+                }
+            }
+
+            &>img {
+                width: 50%;
+            }
+
+            &>h3 {
+                margin-top: 2rem;
+            }
+
+        }
+    }
+
+    hr.before-footer {
+        width: 66%;
+        margin: 12rem auto 0;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        & .brand {
+            font-family: "Segoe UI", serif;
+        }
+
+        & .legals {
+            width: 25%;
+
+            & ul {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+            }
+        }
+    }
+}

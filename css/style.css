@@ -1,0 +1,306 @@
+/* line 1, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 7, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+body {
+  background: #dddddd;
+  font-family: "Segoe UI", serif;
+}
+
+/* line 12, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+a {
+  color: #A22399;
+  text-decoration: none;
+}
+
+/* line 17, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+a.logo-text {
+  color: #ffffff;
+  font-family: "Arno Pro", serif;
+}
+
+@media (max-width: 768px) {
+  /* line 24, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero .brand {
+    background: #A22399;
+  }
+  /* line 27, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero .brand__content {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+  }
+  /* line 35, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero__area {
+    background-image: url(../img/minnacitygate.jpg);
+    background-position: 0 53%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+  }
+  /* line 43, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero__area-content {
+    color: #fff;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+  }
+  /* line 52, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero__area .overlay {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    background: black;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  /* line 62, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero h2 {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 2rem;
+  }
+  /* line 66, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero h2 span {
+    display: block;
+    font-family: "Arno Pro", serif;
+  }
+  /* line 73, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  nav {
+    display: none;
+  }
+}
+
+/* line 79, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+.site__container {
+  padding: 2rem;
+}
+
+/* line 82, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+.site__container .main {
+  margin: auto;
+}
+
+/* line 89, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+.interests {
+  display: grid;
+  grid-gap: 2rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+/* line 95, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+.interests-headline {
+  color: #A22399;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 102, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+.interests-item {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* line 106, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+.interests-item a {
+  color: #777777;
+}
+
+/* line 109, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+.interests-item a:hover, .interests-item a:visited {
+  color: #A22399;
+}
+
+/* line 115, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+.interests-item > img {
+  width: 50%;
+}
+
+/* line 121, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+footer {
+  padding: 1rem;
+}
+
+/* line 125, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* line 130, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+.footer-content a {
+  color: #A22399;
+}
+
+/* line 135, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+.footer-content .legals ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+/* line 140, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+.footer-content .legals ul li:not(last-of-type) {
+  margin-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+  /* line 148, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .site {
+    width: 100%;
+  }
+  /* line 151, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .site__container {
+    padding: 2rem;
+  }
+  /* line 154, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .site__container .main {
+    margin: auto;
+    max-width: 80%;
+  }
+  /* line 162, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero .brand {
+    background: #a22399;
+    padding: 1rem;
+  }
+  /* line 166, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero .brand__content {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  /* line 173, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero .brand__content-item {
+    font-family: "Arno Pro", serif;
+    font-size: 1.5rem;
+  }
+  /* line 180, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero__area {
+    background-image: url(../img/minnacitygate.jpg);
+    background-position: 0 53%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+  }
+  /* line 188, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero__area .overlay {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    background: black;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  /* line 197, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero__area-content {
+    color: #fff;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+  }
+  /* line 205, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero__area-content h2 {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 3.5rem;
+  }
+  /* line 209, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .hero__area-content h2 span {
+    display: block;
+    font-family: "Arno Pro", serif;
+  }
+  /* line 219, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  nav {
+    width: 30%;
+  }
+  /* line 222, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  /* line 231, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 5rem;
+  }
+  /* line 237, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .interests-headline {
+    color: #A22399;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  /* line 244, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .interests-item {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  /* line 248, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .interests-item a {
+    color: #777;
+  }
+  /* line 251, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .interests-item a:hover {
+    color: #A22399;
+  }
+  /* line 256, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .interests-item > img {
+    width: 50%;
+  }
+  /* line 260, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .interests-item > h3 {
+    margin-top: 2rem;
+  }
+  /* line 267, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  hr.before-footer {
+    width: 66%;
+    margin: 12rem auto 0;
+  }
+  /* line 272, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  footer {
+    padding: 1rem;
+  }
+  /* line 276, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  /* line 282, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .footer-content .brand {
+    font-family: "Segoe UI", serif;
+  }
+  /* line 286, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .footer-content .legals {
+    width: 25%;
+  }
+  /* line 289, ../../../../xampp/htdocs/insightminna/sass/style.scss */
+  .footer-content .legals ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
